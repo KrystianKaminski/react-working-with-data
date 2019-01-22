@@ -7,7 +7,7 @@ const Card = (props) => {
         }}>
             <img
                 width="75"
-                src="https://avatars0.githubusercontent.com/u/44421?v=4"
+                src={props.avatar_url}
             />
             <div style={{
                 display: 'inline-block',
@@ -17,11 +17,11 @@ const Card = (props) => {
                     fontSize: '1.25em',
                     fontWeight: 'bold'
                 }}>
-                    Philippe Bruhat (BooK)
+                    {props.name}
                 </div>
 
                 <div>
-                    Booking.com
+                    {props.company}
                 </div>
             </div>
         </div>
