@@ -12,6 +12,7 @@ class Form extends React.Component {
         axios.get(`https://api.github.com/users/${this.state.userName}`)
             .then(response => {
                 this.props.onSubmit(response.data)
+                this.setState({ userName: '' })
             })
     }
     render() {
