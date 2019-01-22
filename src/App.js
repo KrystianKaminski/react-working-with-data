@@ -26,7 +26,9 @@ class App extends Component {
   }
 
   addNewCard = (cardInfo) => {
-    console.log(cardInfo)
+    this.setState(prevState => ({
+      cards: prevState.cards.concat(cardInfo)
+    }))
   }
   render() {
     return (
