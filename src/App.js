@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CardList from './CardList';
+import Form from './Form';
 
 let data = [
   {
@@ -23,6 +24,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Form />
         <CardList
           cards={data}
         />
