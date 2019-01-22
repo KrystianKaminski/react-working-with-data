@@ -8,14 +8,14 @@ let data = [
     company: "Booking.com"
   },
   {
-    name: "Philippe Bruhat (BooK)",
-    avatar_url: "https://avatars0.githubusercontent.com/u/44421?v=4",
-    company: "Booking.com"
+    name: "Inzaghi",
+    avatar_url: "https://avatars2.githubusercontent.com/u/7274953?v=4",
+    company: "-"
   },
   {
-    name: "Philippe Bruhat (BooK)",
-    avatar_url: "https://avatars0.githubusercontent.com/u/44421?v=4",
-    company: "Booking.com"
+    name: "pato",
+    avatar_url: "https://avatars0.githubusercontent.com/u/608083?v=4",
+    company: "-"
   }
 ]
 
