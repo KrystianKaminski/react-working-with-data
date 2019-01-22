@@ -5,7 +5,10 @@ const Card = (props) => {
         <div style={{
             margin: '1em'
         }}>
-            <img src="http://placehold.it/75" />
+            <img
+                width="75"
+                src="https://avatars0.githubusercontent.com/u/44421?v=4"
+            />
             <div style={{
                 display: 'inline-block',
                 marginLeft: 10
@@ -14,12 +17,12 @@ const Card = (props) => {
                     fontSize: '1.25em',
                     fontWeight: 'bold'
                 }}>
-                    Name here...
+                    Philippe Bruhat (BooK)
                 </div>
 
                 <div>
-                    Company name here...
-            </div>
+                    Booking.com
+                </div>
             </div>
         </div>
     )
