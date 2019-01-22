@@ -24,10 +24,16 @@ class App extends Component {
       }
     ]
   }
+
+  addNewCard = (cardInfo) => {
+    console.log(cardInfo)
+  }
   render() {
     return (
       <div>
-        <Form />
+        <Form
+          onSubmit={this.addNewCard}
+        />
         <CardList
           cards={this.state.cards}
         />
