@@ -1,6 +1,9 @@
 import React from 'react'
 import axios from 'axios'
 
+import TextField from 'material-ui/TextField'
+import RaisedButton from 'material-ui/RaisedButton'
+
 class Form extends React.Component {
 
     state = {
@@ -15,22 +18,35 @@ class Form extends React.Component {
                 this.setState({ userName: '' })
             })
     }
+
     render() {
+        const style = {
+            form: {
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center'
+            },
+            button: {
+                maxWidth: '50%'
+            }
+        }
         return (
             <form
                 onSubmit={this.handleSubmit}
+                style={style.form}
             >
-                <input
+                <TextField
                     type="text"
                     value={this.state.userName}
                     onChange={(e) => this.setState({ userName: e.target.value })}
                     placeholder="Github username"
                 />
-                <button
+                <RaisedButton
                     type="submit"
+                    label="Add card"
+                    style={style.button}
                 >
-                    Add card
-                </button>
+                </RaisedButton>
             </form>
         )
     }
